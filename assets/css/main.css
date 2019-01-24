@@ -1120,7 +1120,7 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/background.jpg");
-			background-size: contain;
+			background-size: cover;
 			background-position: center, center;
 			background-repeat: no-repeat, repeat;
 			z-index: 2;
@@ -1137,7 +1137,7 @@ input, select, textarea {
 			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
 			background-image: url("../../images/background.jpg");
 			background-position: center;
-			background-size: contain;
+			background-size: cover;
 			background-repeat: no-repeat;
 			z-index: 1;
 		}
