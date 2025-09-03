@@ -1,31 +1,23 @@
 ---
 
-title: "About David Florian"
+title: "About Daniel Mansueto"
 
 ---
 
 ## Education
 
-David prides himself on his diverse skill set. His most prominent fields of expertise are additive manufacturing (i.e., 3D printing) and biotechnology. 
-
-* University of Virginia
-  * BS Mathematics
-  * BS Biomedical Engineering
 * Vanderbilt University
-  * PhD Biomedical Engineering
+  * Architecture and the Built Environment
 
 ## Technical Skills
 
-David can operate a number of different computer controlled (CNC) fabrication tools to turn 3D models into real-life parts. David has experience with the following additive manufacturing technologies:
+Daniel brings together a background in computer science and architecture to design, prototype, and build both digital and physical projects. He has experience with:
 
-* Fused Filament Fabrication (FFF)
-* Stereolithography (SLA)
-* Selective Laser Sintering (SLS)
-* 3D Inkjet Printing
-* Bioplotting
+* Programming in Python, C/C++, Racket, Prolog, and JavaScript  
+* Game and interactive media development with Unity and custom shader programming  
+* 3D modeling and CAD using Fusion 360 and Rhino 3D  
+* Digital fabrication processes including FDM and TPU 3D printing, SLA resin printing, and laser cutting  
+* Architectural research and adaptive reuse analysis, integrating historical context with modern design
+* Fabrication of furniture
 
-## Press 
-
-The new Digital Fabrication Minor was covered in the [Vanderbilt Hustler](https://vanderbilthustler.com/2022/11/09/digital-fabrication-minor-introduced-for-2022-23-academic-year/).
-
-<img src="/assets/img/David_Headshot_web2.jpg" alt="David Florian" style="width:200px;"/>
+<img src="assets/images/headshotClose.JPG" alt="Daniel Mansueto" style="width:200px;"/>
