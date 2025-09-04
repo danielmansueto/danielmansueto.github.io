@@ -35,38 +35,36 @@ It provides **precise and repeatable flow** while remaining compatible with diff
 
 # Off-the-Shelf Parts
 
-| Component            | Specification                     | Quantity | Est. Cost (USD) |
-|----------------------|-----------------------------------|---------:|----------------:|
-| Arduino Uno R3       | Microcontroller board             | 1        | $25.00 |
-| NEMA 17 Stepper Motor| 1.8° step angle, 1.5A             | 1        | $15.00 |
-| A4988 Stepper Driver | Microstepping driver module       | 1        | $8.00 |
-| Lead Screw           | 8 mm diameter, 2 mm pitch, 300 mm | 1        | $12.00 |
-| Linear Bearings      | LM8UU 8 mm bearings               | 2        | $6.00 |
-| Smooth Rods          | 8 mm diameter, 300 mm length      | 2        | $10.00 |
-| Limit Switch         | Micro switch with lever           | 1        | $2.00 |
-| Push Buttons         | Momentary tactile switches        | 3        | $3.00 |
-| RGB LEDs             | Common cathode, 5 mm              | 3        | $2.00 |
-| Power Supply         | 12 V, 2 A adapter                 | 1        | $10.00 |
-| Flexible Coupling    | 5 mm to 8 mm shaft coupler        | 1        | $5.00 |
-| Misc. Hardware       | Screws, nuts, wires, resistors    | –        | $8.00 |
-| **Total**            | —                                 | —        | **$106.00** |
+| Component                        | Specification / Notes                                | Quantity |
+|----------------------------------|------------------------------------------------------|---------:|
+| Lead screw (250 mm, 2 mm lead)   | Provided                                             | 1 |
+| Lead screw (250 mm, 8 mm lead)   | Provided                                             | 1 |
+| Flexible coupling                | 1/4" × 8 mm                                          | 1 |
+| Linear rods                      | 200 mm length, 8 mm Ø                                | 2 |
+| Linear bearings                  | LM8UU for 8 mm rods                                  | 2 |
+| Aluminum extrusion               | 2040 profile, 1' length                              | 1 |
+| Stepper motor                    | NEMA 17                                              | 1 |
+| Power supply                     | MEAN WELL RQ-65D AC-DC, quad output (5V, 12V, 24V)   | 1 |
+| Arduino Uno                      | R3 board                                             | 1 |
+| Stepper driver                    | A4988                                               | 1 |
+| Breadboard                       | Small prototyping board                              | 1 |
+| Latching push button             | Panel mount, on/off                                  | 1 |
+| Limit switch                     | Mechanical, lever-actuated                           | 1 |
+| RGB LED                          | Common cathode                                       | 1 |
+| Miscellaneous hardware           | Wires, fasteners, resistors, heat shrink             | — |
 
 # 3D-Printed Parts
 
-| Part Name               | Description                          | Material |
-|--------------------------|--------------------------------------|----------|
-| Motor Mount             | Bracket holding NEMA 17 stepper motor | ABS |
-| Lead Nut Housing        | Holds brass lead screw nut | ABS |
-| Syringe Holder          | Clamp mechanism for 10/20 mL syringes | PLA |
-| Plunger Pusher          | Connects lead screw to syringe plunger | PLA |
-| Linear Bearing Blocks ×2| Houses LM8UU bearings                | PLA |
-| Rod Support Brackets ×4 | End supports for smooth rods         | PLA |
-| Base Plate              | Mounting platform for rods & brackets | PLA |
-| Electronics Enclosure   | Protects Arduino/driver; avoid warping | PLA |
-| Limit Switch Mount      | Adjustable bracket for end stop      | PLA |
-| Cable Management Clips  | Wire routing and organization        | PLA |
-| Branding Features       | Logos, labels, aesthetic elements    | PLA |
-| **Total**               | ~250 g PLA + ~50 g ABS               | — |
+### 3D-Printed Parts
+
+| Part Name                 | Description                                      | Material |
+|----------------------------|--------------------------------------------------|----------|
+| Enclosure                  | Main housing for Arduino and driver electronics  | PLA |
+| Enclosure Lid              | Cover for electronics enclosure                  | PLA |
+| End Support                | Standard support for smooth rods and lead screw  | PLA |
+| End Support (Motor Mount)  | Support with integrated motor mounting plate      | ABS |
+| Modified End Supports ×2   | End supports adapted to hold syringe body         | PLA |
+| Carriage                   | Sliding carriage that holds syringe plunger       | PLA |
 
 # Arduino Code
 
