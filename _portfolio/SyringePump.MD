@@ -26,9 +26,8 @@ It provides **precise and repeatable flow** while remaining compatible with diff
 * Arduino-controlled flow rate (mL/min) set via program variables  
 * Compatibility with multiple syringe sizes without tools  
 * LED indicators: green (running), yellow (paused), red (out of liquid)  
-* Latching pushbutton for start/pause and a limit switch for plunger travel  
-* Enclosure that integrates electronics and protects against spills  
-* Unique branding and snap-fit/fastener assembly (no glue)
+* Latching push button for start/pause and a limit switch for plunger travel  
+* Enclosure that integrates electronics and protects against spills   
 
 # Final Design
 
@@ -82,13 +81,13 @@ The Arduino control program is available here:
 
 # Operation
 
-1. **Insert syringe** into the holder and secure with the clamp.  
-2. **Power on** using the external AC-DC supply.  
+1. **Insert syringe** into the holder.
+2. **Power on** power supply.  
 3. **Press the latching button** to start or pause the pump.  
 4. The LED indicates status:  
    * Green = running  
    * Yellow = paused  
    * Red = empty (limit switch triggered)  
-5. Flow rate is controlled in the Arduino sketch by adjusting the syringe diameter variable and the target flow rate (mL/min).  
+5. Flow rate is controlled in the Arduino code by adjusting the flow rate (mL/min) variable.  
 6. To stop, press the button or disconnect power.  
 
