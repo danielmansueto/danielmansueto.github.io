@@ -4,22 +4,22 @@ layout: splash
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
-  overlay_image: /assets/img/Home-Banner-Image.jpeg
+  overlay_image: assets/images/IMG_6201.JPG
   actions:
     - label: "My Projects"
       url: "/portfolio/"
 excerpt: "Daniel Mansueto is a student at Vanderbilt University who is passionate about building things. This website documents all of his different projects."
 feature_row:
-  - image_path: assets/images/pump.JPG
+  - image_path: assets/images/Assembly_2025-Aug-31_07-01-34PM-000_CustomizedView1371566399_png.png
     alt: "Syringe Pump"
     title: "DIY Syringe Pump"
     excerpt: "Syringe pump with customizable flowrate"
-  - image_path: assets/images/IMG_6955.JPG
+  - image_path: assets/images/IMG_6965.JPG
     alt: "Lamp"
     title: "Handmade Lamp"
     excerpt: "Solid steel and goatskin lamp, built from scratch."
-  - image_path: assets/images/IMG_3705.jpeg
-    title: Sometimes welding!
+  - image_path: assets/images/IMG_6704.JPG
+    title: 
     excerpt: ""
 ---
 

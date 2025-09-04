@@ -32,37 +32,42 @@ It provides **precise, repeatable, and non-pulsatile flow** while remaining comp
 
 # Final Design
 
-![Final assembly](assets/images/Assembly_2025-Aug-31_07-01-26PM-000_CustomizedView32163443299_png.png)
+![Final assembly](assets/images/finalPump.png)
 
 # Off-the-Shelf Parts
 
-| Part                                   | Qty | Notes / Source |
-|----------------------------------------|----:|----------------|
-| 250 mm lead screw (2 mm or 8 mm lead)  | 1  | Supplied  [oai_citation:0‡Syringe-Pump-Project-Final-V6 (1).pdf](file-service://file-1knZUnuktbGRaCvCSv6xuv) |
-| 1/4" × 8 mm flexible coupling          | 1  | Supplied  [oai_citation:1‡Syringe-Pump-Project-Final-V6 (1).pdf](file-service://file-1knZUnuktbGRaCvCSv6xuv) |
-| 200 mm linear rod (8 mm Ø)             | 2  | Supplied  [oai_citation:2‡Syringe-Pump-Project-Final-V6 (1).pdf](file-service://file-1knZUnuktbGRaCvCSv6xuv) |
-| LM8UU linear bearing                   | 2  | Supplied  [oai_citation:3‡Syringe-Pump-Project-Final-V6 (1).pdf](file-service://file-1knZUnuktbGRaCvCSv6xuv) |
-| 2040 aluminum extrusion (1’ length)    | 1  | Supplied  [oai_citation:4‡Syringe-Pump-Project-Final-V6 (1).pdf](file-service://file-1knZUnuktbGRaCvCSv6xuv) |
-| NEMA 17 stepper motor                  | 1  | Supplied  [oai_citation:5‡Syringe-Pump-Project-Final-V6 (1).pdf](file-service://file-1knZUnuktbGRaCvCSv6xuv) |
-| MEAN WELL RQ-65D AC-DC power supply    | 1  | Quad output (5V/12V/24V)  [oai_citation:6‡Syringe-Pump-Project-Final-V6 (1).pdf](file-service://file-1knZUnuktbGRaCvCSv6xuv) |
-| Arduino Uno                            | 1  | Supplied  [oai_citation:7‡Syringe-Pump-Project-Final-V6 (1).pdf](file-service://file-1knZUnuktbGRaCvCSv6xuv) |
-| A4988 stepper driver                   | 1  | Supplied  [oai_citation:8‡Syringe-Pump-Project-Final-V6 (1).pdf](file-service://file-1knZUnuktbGRaCvCSv6xuv) |
-| Small breadboard                       | 1  | Supplied  [oai_citation:9‡Syringe-Pump-Project-Final-V6 (1).pdf](file-service://file-1knZUnuktbGRaCvCSv6xuv) |
-| Panel-mount latching pushbutton        | 1  | Start/pause  [oai_citation:10‡Syringe-Pump-Project-Final-V6 (1).pdf](file-service://file-1knZUnuktbGRaCvCSv6xuv) |
-| Limit switch                           | 1  | End-of-stroke stop  [oai_citation:11‡Syringe-Pump-Project-Final-V6 (1).pdf](file-service://file-1knZUnuktbGRaCvCSv6xuv) |
-| RGB common-cathode LED                 | 1  | Green/Yellow/Red status  [oai_citation:12‡Syringe-Pump-Project-Final-V6 (1).pdf](file-service://file-1knZUnuktbGRaCvCSv6xuv) |
-| Wires, resistors, fasteners, heat shrink | — | Supplied  [oai_citation:13‡Syringe-Pump-Project-Final-V6 (1).pdf](file-service://file-1knZUnuktbGRaCvCSv6xuv) |
+| Component            | Specification                     | Quantity | Est. Cost (USD) |
+|----------------------|-----------------------------------|---------:|----------------:|
+| Arduino Uno R3       | Microcontroller board             | 1        | $25.00 |
+| NEMA 17 Stepper Motor| 1.8° step angle, 1.5A             | 1        | $15.00 |
+| A4988 Stepper Driver | Microstepping driver module       | 1        | $8.00 |
+| Lead Screw           | 8 mm diameter, 2 mm pitch, 300 mm | 1        | $12.00 |
+| Linear Bearings      | LM8UU 8 mm bearings               | 2        | $6.00 |
+| Smooth Rods          | 8 mm diameter, 300 mm length      | 2        | $10.00 |
+| Limit Switch         | Micro switch with lever           | 1        | $2.00 |
+| Push Buttons         | Momentary tactile switches        | 3        | $3.00 |
+| RGB LEDs             | Common cathode, 5 mm              | 3        | $2.00 |
+| Power Supply         | 12 V, 2 A adapter                 | 1        | $10.00 |
+| Flexible Coupling    | 5 mm to 8 mm shaft coupler        | 1        | $5.00 |
+| Misc. Hardware       | Screws, nuts, wires, resistors    | –        | $8.00 |
+| **Total**            | —                                 | —        | **$106.00** |
 
 # 3D-Printed Parts
 
-| Part                      | Qty | Material | Notes |
-|---------------------------|----:|----------|-------|
-| Motor mount / bracket     | 1  | ABS      | Required for heat near motor  [oai_citation:14‡Syringe-Pump-Project-Final-V6 (1).pdf](file-service://file-1knZUnuktbGRaCvCSv6xuv) |
-| Carriage with syringe holder | 1 | PLA     | Holds syringe plunger; includes linear bearings |
-| Electronics enclosure     | 1  | PLA/ABS  | Protects Arduino, driver, wiring from liquid |
-| Base brackets / supports  | 2+ | PLA      | Attach extrusion and rods together |
-| Syringe clamp / clip      | 1  | TPU/PLA  | Flexible, tool-free syringe loading |
-| Branding features (logo, label) | optional | PLA | Unique design requirement |
+| Part Name               | Description                          | Material |
+|--------------------------|--------------------------------------|----------|
+| Motor Mount             | Bracket holding NEMA 17 stepper motor | ABS |
+| Lead Nut Housing        | Holds brass lead screw nut | ABS |
+| Syringe Holder          | Clamp mechanism for 10/20 mL syringes | PLA |
+| Plunger Pusher          | Connects lead screw to syringe plunger | PLA |
+| Linear Bearing Blocks ×2| Houses LM8UU bearings                | PLA |
+| Rod Support Brackets ×4 | End supports for smooth rods         | PLA |
+| Base Plate              | Mounting platform for rods & brackets | PLA |
+| Electronics Enclosure   | Protects Arduino/driver; avoid warping | PLA |
+| Limit Switch Mount      | Adjustable bracket for end stop      | PLA |
+| Cable Management Clips  | Wire routing and organization        | PLA |
+| Branding Features       | Logos, labels, aesthetic elements    | PLA |
+| **Total**               | ~250 g PLA + ~50 g ABS               | — |
 
 # Arduino Code
 
