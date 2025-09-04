@@ -14,14 +14,13 @@ feature_row:
     alt: "Syringe Pump"
     title: "DIY Syringe Pump"
     excerpt: "Syringe pump with customizable flowrate"
-  - image_path: assets/images/IMG_6961.JPG
+  - image_path: assets/images/IMG_6955.JPG
     alt: "Lamp"
     title: "Handmade Lamp"
     excerpt: "Solid steel and goatskin lamp, built from scratch."
-  - image_path: assets/images/IMG_6955.JPG
+  - image_path: assets/images/IMG_3705.jpeg
     title: Sometimes welding!
     excerpt: ""
 ---
 
 {% include feature_row %}
-
