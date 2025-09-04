@@ -1,7 +1,6 @@
 ---
-
 title: "About Daniel Mansueto"
-
+---
 
 ## Education
 
@@ -36,5 +35,3 @@ Daniel brings together a background in computer science and architecture to desi
 
 ## Publications/Awards
 * Too many to list.
-
-<img src="assets/images/headshotClose.JPG" alt="Daniel Mansueto" style="width:200px;"/>

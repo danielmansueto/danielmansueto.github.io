@@ -19,7 +19,7 @@ gallery:
 # Purpose & Features
 
 This syringe pump was designed in DF-2100 as a low-cost, 3D-printed alternative to commercial laboratory pumps.  
-It provides **precise, repeatable, and non-pulsatile flow** while remaining compatible with different syringe diameters (10 mL–20 mL).  
+It provides **precise and repeatable flow** while remaining compatible with different syringe diameters (10 mL–20 mL).  
 
 **Features include:**
 * Stepper motor + lead screw drive for accurate plunger motion  
@@ -32,7 +32,7 @@ It provides **precise, repeatable, and non-pulsatile flow** while remaining comp
 
 # Final Design
 
-![Final assembly](assets/images/finalPump.png)
+![Final assembly](/assets/images/finalPump.png)
 
 # Off-the-Shelf Parts
 
@@ -91,5 +91,4 @@ The Arduino control program is available here:
    * Red = empty (limit switch triggered)  
 5. Flow rate is controlled in the Arduino sketch by adjusting the syringe diameter variable and the target flow rate (mL/min).  
 6. To stop, press the button or disconnect power.  
-7. Always ensure wiring and electronics remain dry and protected during use.
 

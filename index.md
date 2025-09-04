@@ -10,7 +10,7 @@ header:
       url: "/portfolio/"
 excerpt: "Daniel Mansueto is a student at Vanderbilt University who is passionate about building things. This website documents all of his different projects."
 feature_row:
-  - image_path: assets/images/Assembly_2025-Aug-31_07-01-34PM-000_CustomizedView1371566399_png.png
+  - image_path: assets/images/newpump.jpg
     alt: "Syringe Pump"
     title: "DIY Syringe Pump"
     excerpt: "Syringe pump with customizable flowrate"
