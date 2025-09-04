@@ -24,7 +24,7 @@ Daniel brings together a background in computer science and architecture to desi
 ## Work Experience
 * Urban Aesthetics: Restoration studio
   * Restored 18/19th century furniture and interiors
-  * Fabricated restaurant interior and furniture
+  * Fabricated restaurant interiors and furniture
   * Built lamp as a side project
 
 * Art Institute of Chicago: Intern in Experience Design 
