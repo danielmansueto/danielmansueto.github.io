@@ -1,5 +1,5 @@
 ---
-title: "Daniel Mansueto: Portfolio"
+title: "Welcome to My Portfolio!"
 layout: splash
 header:
   overlay_color: "#000"
@@ -18,7 +18,7 @@ feature_row:
     alt: "Lamp"
     title: "Handmade Lamp"
     excerpt: "Solid steel and goatskin lamp, built from scratch."
-  - image_path: assets/images/IMG_3705.jpegg
+  - image_path: assets/images/IMG_6955.JPG
     title: Sometimes welding!
     excerpt: ""
 ---
