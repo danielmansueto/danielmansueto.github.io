@@ -1,0 +1,114 @@
+#include <AccelStepper.h>
+
+AccelStepper stepper(AccelStepper::DRIVER, 2, 3);
+
+// Hardware constants
+const int stepsPerRev = 100;
+const int diameter10 = 14.3;
+const int diameter20 = 19.6;
+float pi = 3.14159;
+
+// --------- USER ADJUSTABLE VARIABLES -----------
+float FLOWRATE = 2.0; // mL/min
+int DIAMETER = diameter10; // Syringe Diameter
+
+// Pin Assignments
+const int limitPin = 4;
+const int forwardPin = 6;
+const int reversePin = 5;
+const int onOffPin = 7;
+const int ledGreen = 8;
+const int ledBlue = 9;
+const int ledRed = 10;
+
+// Program Status Variables
+bool syringePumping = false;
+bool wasPumping = false; // tracks if pump ever started
+
+// Equations
+float linearTravel = (FLOWRATE * 1000.0) / (60 * pi * sq(DIAMETER/2)); mm/s
+float revsPerSec = (linearTravel/2); // divide by lead pitch screw
+float stepsPerSec = revsPerSec * stepsPerRev;
+
+void setup() {
+  Serial.begin(9600);
+
+  pinMode(forwardPin, INPUT_PULLUP);
+  pinMode(reversePin, INPUT_PULLUP);
+  pinMode(onOffPin, INPUT_PULLUP);
+  pinMode(limitPin, INPUT_PULLUP);
+
+  pinMode(ledGreen, OUTPUT);
+  pinMode(ledBlue, OUTPUT);
+  pinMode(ledRed, OUTPUT);
+
+  digitalWrite(ledGreen, LOW);
+  digitalWrite(ledBlue, LOW);
+  digitalWrite(ledRed, LOW);
+  
+  stepper.setMaxSpeed(1000);	
+  stepper.setSpeed(0);
+}
+
+void loop() {
+  int forwardState = digitalRead(forwardPin);
+  int reverseState = digitalRead(reversePin);
+  int onOffState = digitalRead(onOffPin);
+  int limitState = digitalRead(limitPin);
+
+  // Check limit switch (Highest priority)
+  if (limitState == LOW) {
+    syringePumping = false;
+    stepper.setSpeed(0);
+
+    digitalWrite(ledGreen, LOW);
+    digitalWrite(ledBlue, LOW);
+    digitalWrite(ledRed, HIGH);
+    return;
+  } 
+
+  // If limit not triggered, check on/off button
+  if (onOffState == LOW) {
+    if (!syringePumping) {
+      // Transitioning from not pumping to pumping
+      wasPumping = true; 
+    }
+    syringePumping = true;
+  } else {
+    syringePumping = false;
+  }
+
+  if (syringePumping) {
+    stepper.setSpeed(-stepsPerSec);
+
+    digitalWrite(ledGreen, HIGH);
+    digitalWrite(ledBlue, LOW);
+    digitalWrite(ledRed, LOW);
+
+    stepper.runSpeed();
+  } else {
+    stepper.setSpeed(0);
+
+    // If pump has started once and is now paused, LED is yellow
+    if (wasPumping) {
+      digitalWrite(ledRed, 255);
+      digitalWrite(ledGreen, 150);
+      digitalWrite(ledBlue, LOW);
+    } else {
+      digitalWrite(ledRed, 255);
+      digitalWrite(ledGreen, 150);
+      digitalWrite(ledBlue, LOW);
+    }
+
+    // extra credit clockwise/counterclockwise buttons
+    if (forwardState == LOW) {
+      stepper.setSpeed(50); 
+      stepper.runSpeed();
+    } else if (reverseState == LOW) {
+      stepper.setSpeed(-50); 
+      stepper.runSpeed();
+    } else {
+      stepper.setSpeed(0);
+    }
+  }
+}
