@@ -2,11 +2,11 @@
 title: "Pinch Flow Fractionation Micro Fluidic Device"
 excerpt: "Microfluidic device for particle sorting using laminar flow and size-dependent displacement."
 header:
-  image: /assets/images/pffDevice.jpg
-  teaser: /assets/images/pffDevice.jpg
+  image: /assets/images/ufluidicImgs/uFluidicRender.png
+  teaser: /assets/images/ufluidicImgs/uFluidicRender.png
 gallery:
-  - url: /assets/images/pffDevice.jpg
-    image_path: /assets/images/pffDevice.jpg
+  - url: /assets/images/ufluidicImgs/uFluidicRender.png
+    image_path: /assets/images/ufluidicImgs/uFluidicRender.png
     alt: "Final PFF device"
 ---
 
