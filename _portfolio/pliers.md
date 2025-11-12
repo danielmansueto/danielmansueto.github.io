@@ -45,6 +45,9 @@ Early iterations in CAD focused on refining the geometry of the dovetail joinery
 
 I had to print the flexible joint and jaws twice and the handles three times to dial in the correct fitment of the joinery and flexibility. 
 
+![All Parts](/assets/images/pliers/all.JPG)
+Total printed parts
+
 
 ## First Iteration
 I started my prototyping process using a 0.25mm offset around the dovetail joinery to allow for clearance so the parts could fit together easily. This turned out to be too much and the handles and jaws were not secured to the joint.
@@ -62,6 +65,8 @@ The height of the pliers was 10mm and this felt appropriate for picking up resis
 Removing the clearance offset proved to provide a secure fit between the TPU joint and  handles and jaws. I lessened the infill percetage of the TPU joint to 18% and this felt much better. With the jaws having full range of movement now, I could see one further problem: the inside corners of the handles were colliding with each other before the tips of the jaws, slightly restricting the range of movement
 
 ![infill](/assets/images/pliers/jointSlicer.png)
+
+
 ![joints](/assets/images/pliers/jointComparison.JPG)
 
 23% infill shown on left and 18% infill shown on right
@@ -113,6 +118,8 @@ The pliers worked well in picking up resistors. Here is a gif of them working:
 # Gallery
 
 ![WIP 1](/assets/images/pliers/topDown.jpg)
+
+
 ![WIP 2](/assets/images/pliers/sideView.jpg)
 
 ---
