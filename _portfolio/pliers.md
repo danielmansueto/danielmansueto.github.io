@@ -10,7 +10,7 @@ gallery:
     alt: "Iteration 1"
 ---
 
-# Overview
+## Overview
 The goal of this project was to design and fabricate pliers that can pickup through-hole resistors reliably (very small things). The pliers had to return to the open position when not compressed and be 3D printed either as print-in-place design or as a three-part hand-press assembly (assembled wihtout without tools).
 
 
@@ -124,6 +124,6 @@ The pliers worked well in picking up resistors. Here is a gif of them working:
 
 ---
 
-# References & Assignment
+# References
 
 - All3DP: *3D-Printed Flexible Pliers* — design inspiration. <https://all3dp.com/3d-printed-flexible-pliers/>
