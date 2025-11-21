@@ -50,13 +50,13 @@ My first iteration proved to have many problems, but was a good starting point a
 
 In this version, I redesigned the phone holder using TPU. This required splitting it into two parts: a rigid insert that attaches to the base and a flexible TPU phone holder. I also doubled the width of the assembly to make it more stable.
 
-![secondMech](../assets/images/bikeMount/IMG_0344.JPG)
+![secondMech](/assets/images/bikeMount/IMG_0344.JPG)
 
 However, I ran into a new issue: I couldn’t assemble the detent mechanism because the spring and ball couldn’t be installed after inserting the rotation shaft.
 
 ### Third Iteration
 
-![third](../assets/images/bikeMount/IMG_0345.JPG)
+![third](/assets/images/bikeMount/IMG_0345.JPG)
 
 To solve that, I redesigned the detent mechanism by splitting the top portion of the base into a separate lid. This allowed me to insert the spring and ball, then secure it with M3 bolts and heat-set nuts. I also widened the body to provide clearance for the hardware. This was also when I switched to PETG instead of PLA for better durability and flexibility.
 
@@ -82,11 +82,11 @@ I used filament-based FDM 3D printing for all prototypes because it allowed for 
 ### Assembly
 1. Heat sink nuts into clamp base, shown below
    
-![alt text](../assets/images/bikeMount/IMG_0309.JPG)
+![alt text](/assets/images/bikeMount/IMG_0309.JPG)
 
 2. Fit phone mount base into clamp lid and place spring and ball inside
    
-![alt text](../assets/images/bikeMount/IMG_0312.JPG)
+![alt text](/assets/images/bikeMount/IMG_0312.JPG)
 
 3. Use M3 (8mm) bolts to attach clamp lid +  phone mount base into clamp base.
 4. Use M3 (16mm) bolt to secure phone mount base into clamp base.
@@ -107,33 +107,33 @@ I used filament-based FDM 3D printing for all prototypes because it allowed for 
 
 
 
-![alt text](../assets/images/bikeMount/gif.gif)
+![alt text](/assets/images/bikeMount/gif.gif)
 
 ---
 
 # Figures
 
 ### Final Assembly on Handlebars
-![alt text](../assets/images/bikeMount/IMG_0314.JPG)
+![alt text](/assets/images/bikeMount/IMG_0314.JPG)
 
-![alt text](../assets/images/bikeMount/IMG_0316.JPG)
+![alt text](/assets/images/bikeMount/IMG_0316.JPG)
 
-![alt text](../assets/images/bikeMount/IMG_0317.JPG)
+![alt text](/assets/images/bikeMount/IMG_0317.JPG)
 
 
 ### Individual CAD Components
 
 Clamp Base with lid:
-![alt text](<../assets/images/bikeMount/Screenshot 2025-11-21 at 9.00.58 AM.png>)
+![alt text](</assets/images/bikeMount/clamp.png>)
 
 Clamp Base without lid:
-![alt text](<../assets/images/bikeMount/Screenshot 2025-11-21 at 9.03.06 AM.png>)
+![alt text](</assets/images/bikeMount/clampnolid.png>)
 
 Phone Mount:
 
-![alt text](<../assets/images/bikeMount/Screenshot 2025-11-21 at 9.01.30 AM.png>)
+![alt text](</assets/images/bikeMount/mount.png>)
 
 TPU Phone Holder:
 
-![alt text](<../assets/images/bikeMount/Screenshot 2025-11-21 at 9.01.45 AM.png>)
+![alt text](</assets/images/bikeMount/holder.png>)
 ---
