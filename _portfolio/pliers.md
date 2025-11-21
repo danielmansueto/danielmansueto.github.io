@@ -79,6 +79,11 @@ To correct the range of movement from the second iteration, I cut back the corne
 
 ---
 
+# Interactive CAD Model
+
+
+<iframe src="https://a360.co/4qUgBps" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" frameborder="0"></iframe>
+
 # Specifications
 
 | Feature | Size | Notes |
