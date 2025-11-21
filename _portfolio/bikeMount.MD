@@ -1,15 +1,20 @@
 ---
 title: "Bike Phone Mount"
-excerpt: "Top-down modeled rotating phone holder with portrait-landscape lockable mechanism."
+excerpt: "Top-down modeled bike phone mount"
 thumbnail: '/assets/images/bikeMount/perspective.jpg'
 header:
   image: '/assets/images/bikeMount/perspective.jpg'
+  teaser: /assets/images/bikeMount/perspective.jpg
+gallery:
+  - url: /assets/images/bikeMount/perspective.jpg
+    image_path: /assets/images/bikeMount/perspective.jpg
+    alt: "Iteration 1"
 ---
 
 
-This project made use of top down modeling in Fusion 360 to design a bike phone mount. In top down modeling, individual components are created withing the context of the full model (in the same file). This allows components to be made according to their relationship to other parts in a model, something very difficult to do when components are located in seperate files. For any assembly, this method also makes editing components, like changing dimensions, much faster as changes can be viewed in the context of the full assembly/use case.
+This project made use of top-down modeling in Fusion 360 to design a bike phone mount. In top-down modeling, individual components are created within the context of the full model (in the same file). This allows parts to be designed based on their relationship to each other, something that is very difficult to do when components are in separate files. For any assembly, this method also makes editing components, such as changing dimensions, much faster because changes can be viewed in the context of the full assembly and use case.
 
-In this project, top down modeling was leveraged to design the bike phone mount around the bike handle bars and phone that would be used. Handlebars and phone were modeled and the assembly was created in the same file around them. Each part of the phone mount were made as individual components designed in relation to one another.
+In this project, top-down modeling was leveraged to design the phone mount around the actual bike handlebars and the phone that would be used. The handlebars and phone were modeled and the assembly was then created in the same file around them. Each part of the phone mount was created as an individual component, designed in relation to the others.
 
 
 ---
@@ -17,16 +22,16 @@ In this project, top down modeling was leveraged to design the bike phone mount 
 # Design Rationale
 
 ### Design Philosophy
-I aimed to keep the phone mount as small in footprint as possible. I know many bikes have limited room left for phone mounts as grips/handle bar tap and brake/shifting assemblies can take up loads of room on the handlebars. I strived for a small and minimal design. My thinking being with simpler parts and the whole assembly being contained closer to the handlebars, there would be less movement of the assembly from bumps and the phone better contained.
+I aimed to keep the phone mount as compact as possible. Many bikes have limited space left on their handlebars because grips, handlebar tape, and brake/shifting assemblies take up a lot of room. I wanted a minimal, clean design that stays close to the handlebars to reduce wobbling, minimize movement during bumps, and keep the phone better secured.
 
 ### Rotation Mechanism
-I used a detent rotation mechanism to allow the phone to be positioned in both portrait and landscape orientations. A cutout in the base of the phone mount allows for a spring to be inserted pushing against a ball. The part that attaches to the phone slots into the base (in a cyclinder shape) and has cutouts for the spring and ball to push into. Multiple of these cutouts (every 90 degrees) in the cylinder allow for the phone to be rotated. The spring and ball push into the cutouts to secure the position.
+I used a detent rotation mechanism to allow the phone to be positioned in both portrait and landscape orientations. A cutout in the base of the mount holds a spring pushing against a steel ball. The part that attaches to the phone slots into the base in a cylindrical shape and has small notches cut into it every 90 degrees. As the phone is rotated, the ball and spring snap into the notches to hold it in position.
 
 ![mechanism](/assets/images/bikeMount/mechanism.png)
 
 
 ### Multiple Materials
-It became apparent after my first prototype that multiple materials would be necessary: a rigid one for the base/clamp and a softer/elastic one to hold the phone. This realization mainly changed the phone mount part. I measured my phone with calipers and designed a tight fit with genrous overhangs around the edges to securley grip it. Using 95A TPU allowed for a tight fitting design to still be easy to snap my phone into.
+After the first prototype, I realized that multiple materials were needed: a rigid material for the base/clamp and a flexible one to hold the phone. This mostly affected the phone holder component. I measured my phone with calipers and designed a tight fit with generous overhangs around the edges to securely grip it. Using 95A TPU allowed the phone holder to flex slightly so the phone could snap in while still being held tightly.
 
 ---
 
@@ -43,24 +48,24 @@ My first iteration proved to have many problems, but was a good starting point a
 
 ![second](/assets/images/bikeMount/second.JPG)
 
-My second iteration focused on fixing the phone mount. I designed a new holder to be made out of TPU. This change required me to seperate the phone mount into two seperate pieces: one to be inserted to the base (out of rigid plastic) and the phone holder (out of TPU). I doubled the width of the whole assembly because it looked too narrow to begin with.
+In this version, I redesigned the phone holder using TPU. This required splitting it into two parts: a rigid insert that attaches to the base and a flexible TPU phone holder. I also doubled the width of the assembly to make it more stable.
 
 ![secondMech](../assets/images/bikeMount/IMG_0344.JPG)
 
-I ran into the issue of not being able to assemble my detent mechanism with this iteration. There was no way to insert the rigid part of the phone holder into the base with the spring and ball.
+However, I ran into a new issue: I couldn’t assemble the detent mechanism because the spring and ball couldn’t be installed after inserting the rotation shaft.
 
 ### Third Iteration
 
 ![third](../assets/images/bikeMount/IMG_0345.JPG)
 
-To fix the assembly of the detent mechanism, I sliced the detent mechanism into two parts, making the top part a lid so the mechanism could be assembled. This required widening of the body further to allow clearnace for four M3 bolts and heat sinking nuts to be installed so the lid could attach to the base.
+To solve that, I redesigned the detent mechanism by splitting the top portion of the base into a separate lid. This allowed me to insert the spring and ball, then secure it with M3 bolts and heat-set nuts. I also widened the body to provide clearance for the hardware. This was also when I switched to PETG instead of PLA for better durability and flexibility.
 
-I also minorly updated my phone holder to account for my new iPhone 17 Pro's huge camera bump. This iteration I also printed all the rigid components in PETG instead of PLA as I learend it is less brittle.
+I also minorly updated my phone holder to account for my new iPhone 17 Pro's huge camera bump. 
 
 ---
 
 ### Printing Technology and Material Choices
-I used filament 3D printing for this project as it allowed for the fastest prototyping and range of materials.
+I used filament-based FDM 3D printing for all prototypes because it allowed for fast iteration and a choice of materials (PLA, PETG, and TPU). TPU was used only for the flexible phone holder, while PETG was used for rigid, durable components.
 
 | Part | Printing Technology | Material | Reason |
 |------|---------------------|----------|--------|
@@ -76,16 +81,16 @@ I used filament 3D printing for this project as it allowed for the fastest proto
 
 ### Assembly
 1. Heat sink nuts into clamp base, shown below
-2. 
+   
 ![alt text](../assets/images/bikeMount/IMG_0309.JPG)
 
-1. Fit phone mount base into clamp lid and place spring and ball inside
+2. Fit phone mount base into clamp lid and place spring and ball inside
    
 ![alt text](../assets/images/bikeMount/IMG_0312.JPG)
 
-1. Use M3 (8mm) bolts to attach clamp lid +  phone mount base into clamp base.
-2. Use M3 (16mm) bolt to secure phone mount base into clamp base.
-3. Use M3 bolts and nuts to fit TPU phone holder to phone mount base.
+3. Use M3 (8mm) bolts to attach clamp lid +  phone mount base into clamp base.
+4. Use M3 (16mm) bolt to secure phone mount base into clamp base.
+5. Use M3 bolts and nuts to fit TPU phone holder to phone mount base.
 
 ### Use instructions
 1. Use M3 bolts and nuts to secure assembly to handlebars
