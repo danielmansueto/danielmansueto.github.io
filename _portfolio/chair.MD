@@ -53,17 +53,16 @@ galleryBottom:
 
 This project explores the intersection of generative design and powder bed fusion through the creation of a lightweight, high-stiffness chair frame. Generative design utilizes algorithms to explore solutions to a defined set of criteria. 
 
-Using Fusion 360's Generative Design feature, I defined preserve geometries, areas to be kept in the design, obstacle geometries, areas where material should not be generated, and provided the the direction and magnatudes of forces applied to the preserve geometries.
+Using Fusion 360's Generative Design feature, I defined preserve geometries, areas to be kept in the design, obstacle geometries, areas where material should not be generated, and provided the the direction and magnitudes of forces applied to the preserve geometries.
 
-The outcomes of generative design modeling are often organic looking stuctures that would be very difficult or impossible to create using traditional methods of manufacturing. Powder bed fusion works especially well to create these organic, irregular geometries from generative design because does not require any support material and can print parts in any orientation.
+The outcomes of generative design modeling are often organic looking stuctures that would be very difficult or impossible to create using traditional methods of manufacturing. Powder bed fusion works especially well to create these organic, irregular geometries from generative design because it does not require any support material and can print parts in any orientation.
 
 {% include gallery gallery=page.galleryTop caption="Fusion 360 Renders" class="gallery-two-col" %}
 
-## Commercial Example: GM Seat Bracket Consolidation
+## Generative Design Example for Part Consolidation
 
-General Motors applied generative design to re-engineer a seat bracket that originally consisted of **eight separate components** requiring welding and assembly. Using Autodesk generative design, GM reduced this to **one consolidated part**, simultaneously lowering mass by 40%, eliminating fasteners, and improving stiffness.  
-More importantly, the final organic structure was only manufacturable using **metal powder bed fusion**—demonstrating the unique partnership between generative design (which often produces non-traditional geometries) and additive manufacturing (which can fabricate them without tooling).  
-This case demonstrates how generative design reduces assembly complexity, improves reliability, and eliminates weak points at joints.
+
+Nasa used Generative Design in its EXoplanet Climate Infrared TElescope (EXCITE) that studies exoplanets orbiting distant stars. The telescope is the size of a car and contains two generatively designed parts: a titanium scaffold and a "optical bench" that holds a variety of optical instruments. The optical bench design is drastically different from others of its kind and is superior structrually and consolidated a mechanism that is usually ten parts into one. 
 
 
 ---
@@ -72,7 +71,7 @@ This case demonstrates how generative design reduces assembly complexity, improv
 
 ![loads](/assets/images/chair/loads.png)
 
-Applying  load cases was essential to ensuring that the generative chair works structurally. Generative design is highly sensitive to the location of applied forces and to the placement of structural constraints, so careful reasoning was necessary.
+Applying proper load cases was essential to ensuring that the generative chair works structurally. Generative design is highly sensitive to the location of applied forces and to the placement of structural constraints, so careful reasoning was necessary.
 
 ### Determining Forces  
 To determine appropriate loads for a chair, I used approximate values based on human interaction:
@@ -84,7 +83,7 @@ To determine appropriate loads for a chair, I used approximate values based on h
 These values produce realistic stress conditions that guide the generative tool toward functional results.
 
 ### Placement of Structural Constraints  
-I constrained the feet of the chair to simulate the floor contact.
+The chair’s structural constraints are applied at the floor contact points because this is where the frame transfers load into the ground. These locations act as the fixed supports for the system: they represent the points that cannot move, rotate, or deflect under load.  In a real chair, the legs are the only elements that anchor the structure, so constraining the floor surfaces accurately captures how forces travel from the seat, through the frame, and into the ground. By fixing the legs at the floor plane, the generative design algorithm produces a topology that reflects realistic load paths and seating behavior.
 
 
 ### Obstacle Geometry
@@ -116,13 +115,11 @@ As seen from the image above, all the outcomes are relatively similar. I believe
 # Pros and Cons of Generative Design
 
 ### Usefulness
-- Exceptional for consolidating assemblies, reducing part count  
+- Consolidating assemblies, reducing part count  
 - Helps discover non-intuitive, high-performance structures  
-- Especially useful in aerospace, automotive, and robotics  
 - Integrates naturally with additive manufacturing  
 
 ### Drawbacks
-- Highly sensitive to load case accuracy — bad inputs → unusable geometry  
 - Produces shapes that are difficult to manufacture without additive processes  
 - Can require extensive post-processing or redesign for real-world constraints  
 - Results can be “over-optimized” and lose practicality  
