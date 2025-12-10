@@ -7,3 +7,20 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+.gallery-two-col ul.gallery {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+  
+  .gallery-two-col ul.gallery li {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+  
+  .gallery-two-col ul.gallery img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
