@@ -54,7 +54,7 @@ Using Fusion 360's Generative Design feature, I defined preserve geometries, are
 
 The outcomes of generative design modeling are often organic looking stuctures that would be very difficult or impossible to create using traditional methods of manufacturing. Powder bed fusion works especially well to create these organic, irregular geometries from generative design because does not require any support material and can print parts in any orientation.
 
-{% include galleryTop caption="Fusion 360 Renders" %}
+{% include gallery gallery=page.galleryTop caption="Fusion 360 Renders" %}
 
 ## Commercial Example: GM Seat Bracket Consolidation
 
@@ -142,4 +142,4 @@ width="800" height="600" allowfullscreen frameborder="0"></iframe>
 
 # Powder Printed Model Photos
 
-{% include galleryBottom caption="pSLS printed model straight out of printer, cleaned, and model photos after spray painting." %}
+{% include gallery gallery=page.galleryBottom caption="pSLS printed model straight out of printer, cleaned, and model photos after spray painting." %}
