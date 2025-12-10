@@ -1,10 +1,10 @@
 ---
 title: "Generative Design Chair"
 excerpt: "Chair created using Fusion 360 Generative Design"
-thumbnail: '/assets/images/chair/chairBackAngle.png'
+thumbnail: '/assets/images/chair/chairAngled.png'
 header:
   image: '/assets/images/chair/chairAngled.png'
-  teaser: assets/images/chair/chairBackAngle.png
+  teaser: assets/images/chair/chairAngled.png
 galleryTop:
   - url: /assets/images/chair/chairAngleFront.png
     image_path: /assets/images/chair/chairAngleFront.png
@@ -18,6 +18,9 @@ galleryTop:
   - url: /assets/images/chair/chairBack.png
     image_path: /assets/images/chair/chairBack.png
     alt: "back"  
+  - url: /assets/images/chair/chairFront.png
+    image_path: /assets/images/chair/chairFront.png
+    alt: "front"
   - url: /assets/images/chair/chairTop.png
     image_path: /assets/images/chair/chairTop.png
     alt: "Top"
@@ -54,7 +57,7 @@ Using Fusion 360's Generative Design feature, I defined preserve geometries, are
 
 The outcomes of generative design modeling are often organic looking stuctures that would be very difficult or impossible to create using traditional methods of manufacturing. Powder bed fusion works especially well to create these organic, irregular geometries from generative design because does not require any support material and can print parts in any orientation.
 
-{% include gallery gallery=page.galleryTop caption="Fusion 360 Renders" %}
+{% include gallery gallery=page.galleryTop caption="Fusion 360 Renders" layout="" %}
 
 ## Commercial Example: GM Seat Bracket Consolidation
 
@@ -67,7 +70,7 @@ This case demonstrates how generative design reduces assembly complexity, improv
 
 # Load Cases and Boundary Conditions
 
-![loads](../assets/images/chair/loads.png)
+![loads](/assets/images/chair/loads.png)
 
 Applying  load cases was essential to ensuring that the generative chair works structurally. Generative design is highly sensitive to the location of applied forces and to the placement of structural constraints, so careful reasoning was necessary.
 
@@ -88,11 +91,11 @@ I constrained the feet of the chair to simulate the floor contact.
 
 The obstacle geometry ended up shaping the design the most. Throughout my process, I kept adding more obstacles, reducing the area where material could be generated. This helped give me a level of control over the generated designs and shape the chair to my liking.
 
-![obstacle](../assets/images/chair/obstacle.png)
+![obstacle](/assets/images/chair/obstacle.png)
 
 Obstacles filled the area above the seat, where one would sit as well as below the seat/between the four legs. A ground was added so the chair would rest flat on the ground.
 
-![obstacle2](../assets/images/chair/obstacle1.png)
+![obstacle2](/assets/images/chair/obstacle1.png)
 
 Later on, I added walls all around the the preserve geometry to constrain the chair to a smaller footprint.
 
@@ -100,7 +103,7 @@ Later on, I added walls all around the the preserve geometry to constrain the ch
 
 # Comparison: Different Material Outcomes
 
-![outcomes](<../assets/images/chair/outcomes.png>)
+![outcomes](/assets/images/chair/outcomes.png)
 
 I generated a few different material outcomes: nylon PA12 (top left), aluminum ALSi10Mg (bottom left), Titanium 6AI-4V (top right), and Galvanized Steel (bottom right).
 
@@ -142,4 +145,4 @@ width="800" height="600" allowfullscreen frameborder="0"></iframe>
 
 # Powder Printed Model Photos
 
-{% include gallery gallery=page.galleryBottom caption="pSLS printed model straight out of printer, cleaned, and model photos after spray painting." %}
+{% include gallery gallery=page.galleryBottom caption="pSLS printed model straight out of printer, cleaned, and model photos after spray painting." layout="" %}
